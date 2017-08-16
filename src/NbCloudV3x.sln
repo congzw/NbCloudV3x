@@ -11,6 +11,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZQNB.Web", "ZQNB.Web\ZQNB.W
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZQNB.Web.Infrastructure", "ZQNB.Web.Infrastructure\ZQNB.Web.Infrastructure.csproj", "{707A8E34-059D-4863-A18A-C30954B177B6}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "common", "common", "{7B1C3976-D266-4203-AFB3-25DF559D42A2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "baselib", "baselib", "{610509A4-C77F-42C8-825F-4457F7B458A0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "web", "web", "{C7ED42BB-5F8F-44FE-8E82-495BEC2EE4FA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,5 +42,11 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{698DBDF8-D962-4B1D-82BE-B6C6F98A29DE} = {7B1C3976-D266-4203-AFB3-25DF559D42A2}
+		{1B91D558-6270-4466-9801-A43F479E6BC2} = {7B1C3976-D266-4203-AFB3-25DF559D42A2}
+		{04D481AD-D4FC-45E2-AB5B-1135BB246E61} = {C7ED42BB-5F8F-44FE-8E82-495BEC2EE4FA}
+		{707A8E34-059D-4863-A18A-C30954B177B6} = {C7ED42BB-5F8F-44FE-8E82-495BEC2EE4FA}
 	EndGlobalSection
 EndGlobal
