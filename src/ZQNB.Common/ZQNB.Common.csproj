@@ -45,6 +45,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Caching\Extensions.cs" />
+    <Compile Include="Caching\ICacheManager.cs" />
+    <Compile Include="Caching\IPerApplicationCacheManager.cs" />
+    <Compile Include="Caching\NullCacheManager.cs" />
+    <Compile Include="Caching\PerRequestCacheManager.cs" />
     <Compile Include="Ioc\ActivationException.cs" />
     <Compile Include="Ioc\ActivationException.Desktop.cs" />
     <Compile Include="Ioc\CoreServiceProvider.cs" />
