@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Configuration;
 using System.Xml;
-// ReSharper disable once CheckNamespace
+
 namespace ZQNB.Common
 {
     /// <summary>

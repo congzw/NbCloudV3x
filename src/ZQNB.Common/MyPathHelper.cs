@@ -2,7 +2,6 @@
 using System.IO;
 using System.Web;
 
-// ReSharper disable once CheckNamespace
 namespace ZQNB.Common
 {
     public class MyPathHelper

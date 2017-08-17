@@ -1,5 +1,4 @@
 ﻿using System;
-// ReSharper disable CheckNamespace
 
 namespace ZQNB.Common
 {

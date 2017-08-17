@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 
-// ReSharper disable CheckNamespace
 namespace ZQNB.Common
 {
     /// <summary>
