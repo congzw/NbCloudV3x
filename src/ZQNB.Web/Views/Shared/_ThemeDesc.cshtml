@@ -2,5 +2,11 @@
 @{
     var themeManager = ThemeManagerRegistry.Instance.GetService();
     var requestTheme = themeManager.GetRequestTheme(this.Request.RequestContext);
+
 }
 <h2>Try Find Theme: @requestTheme.ThemeName</h2>
+<hr />
+@foreach (var item in this.FindLayoutsTrace)
+{
+    <p>@item</p>
+}
