@@ -101,6 +101,7 @@
     <Compile Include="Themes\Web\Mvc\ThemeViewEngine.cs" />
     <Compile Include="Themes\Web\Mvc\WebViewPage.cs" />
     <Compile Include="UtilsLogger.cs" />
+    <Compile Include="Web\Mvc\HtmlRenderExtensions.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
