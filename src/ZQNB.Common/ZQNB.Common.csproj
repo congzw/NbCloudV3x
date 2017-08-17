@@ -65,6 +65,11 @@
     <Compile Include="MessageResult.cs" />
     <Compile Include="MyPathHelper.cs" />
     <Compile Include="Singleton.cs" />
+    <Compile Include="Themes\DefaultThemeSelector.cs" />
+    <Compile Include="Themes\IThemeService.cs" />
+    <Compile Include="Themes\ThemeManager.cs" />
+    <Compile Include="Themes\ThemeManagerRegistry.cs" />
+    <Compile Include="Themes\ThemeSelector.cs" />
     <Compile Include="UtilsLogger.cs" />
   </ItemGroup>
   <ItemGroup>
