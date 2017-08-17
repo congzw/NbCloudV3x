@@ -41,6 +41,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Ioc\ActivationException.cs" />
+    <Compile Include="Ioc\ActivationException.Desktop.cs" />
+    <Compile Include="Ioc\CoreServiceProvider.cs" />
+    <Compile Include="Ioc\IServiceLocator.cs" />
+    <Compile Include="Ioc\ServiceLocatorImplBase.cs" />
     <Compile Include="Shared\MyConfigHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Shared\MessageResult.cs" />
