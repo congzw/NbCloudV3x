@@ -28,7 +28,7 @@ namespace ZQNB.Common.Web.Mvc
 
             var script = new TagBuilder("script");
             script.Attributes["type"] = "text/javascript";
-            script.Attributes["src"] = ProcessUrl(url);
+            script.Attributes["src"] = urlHelper.Content(ProcessUrl(url));
             return new HtmlString(script.ToString(TagRenderMode.Normal));
         }
 
@@ -47,7 +47,7 @@ namespace ZQNB.Common.Web.Mvc
 
             var script = new TagBuilder("link");
             script.Attributes["rel"] = "stylesheet";
-            script.Attributes["href"] = ProcessUrl(url);
+            script.Attributes["href"] = urlHelper.Content(ProcessUrl(url));
             return new HtmlString(script.ToString(TagRenderMode.SelfClosing));
         }
 
