@@ -102,6 +102,7 @@
     <Compile Include="Themes\Web\Mvc\WebViewPage.cs" />
     <Compile Include="UtilsLogger.cs" />
     <Compile Include="Web\Mvc\HtmlRenderExtensions.cs" />
+    <Compile Include="Web\Mvc\RazorExtensions.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
