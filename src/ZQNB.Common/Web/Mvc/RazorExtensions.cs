@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Text;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.WebPages;
@@ -60,6 +61,39 @@ namespace ZQNB.Common.Web.Mvc
                     template(item).WriteTo(writer);
                 }
             });
+        }
+        
+        //@using System.Text;
+        //@functions {
+        //    public static IHtmlString Repeat(int times, Func<int, object> template) {
+        //        StringBuilder builder = new StringBuilder();
+        //        for(int i = 0; i < times; i++) {
+        //            builder.Append(template(i));
+        //        }
+        //        return new HtmlString(builder.ToString());
+        //    }
+        //}
+
+        //<!DOCTYPE html>
+        //<html>
+        //    <head>
+        //        <title>Repeat Helper Demo</title>
+        //    </head>
+        //    <body>
+        //        <p>Repeat Helper</p>
+        //        <ul>
+        //            @Repeat(10, @<li>List Item #@item</li>);
+        //        </ul>
+        //    </body>
+        //</html>
+        public static IHtmlString Repeat(int times, Func<int, object> template)
+        {
+            var builder = new StringBuilder();
+            for (int i = 0; i < times; i++)
+            {
+                builder.Append(template(i));
+            }
+            return new HtmlString(builder.ToString());
         }
 
         private static string ProcessUrl(string url)
