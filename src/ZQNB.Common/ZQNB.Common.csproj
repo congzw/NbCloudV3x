@@ -78,6 +78,7 @@
     <Compile Include="Caching\IPerApplicationCacheManager.cs" />
     <Compile Include="Caching\NullCacheManager.cs" />
     <Compile Include="Caching\PerRequestCacheManager.cs" />
+    <Compile Include="GuidHelper.cs" />
     <Compile Include="Ioc\ActivationException.cs" />
     <Compile Include="Ioc\ActivationException.Desktop.cs" />
     <Compile Include="Ioc\CoreServiceProvider.cs" />

@@ -2,8 +2,11 @@
 
 ## Shared
 
+- utils & helpers
+- [todo]Log 
 - Cache
 - Ioc
+- [todo]Events
 
 ## Features
 
