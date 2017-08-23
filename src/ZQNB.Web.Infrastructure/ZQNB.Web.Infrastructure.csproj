@@ -68,6 +68,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_Start\DashRouteHandler.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="NbMvcApplication.cs" />
     <Compile Include="NbBootstrapper.cs" />
