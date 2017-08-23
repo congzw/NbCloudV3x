@@ -36,7 +36,7 @@ namespace ZQNB.Common.Web.Mvc
             //2 append line with \
             #endregion
 
-            if (value.IsNullOrWhiteSpace())
+            if (string.IsNullOrWhiteSpace(value))
             {
                 return new HtmlString(string.Empty);
             }
