@@ -3,17 +3,63 @@ using System.Collections.Generic;
 using System.Text;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.Mvc.Html;
 using System.Web.WebPages;
 
 namespace ZQNB.Common.Web.Mvc
 {
     public static class RazorExtensions
     {
-        //how to use?
+        #region PartialIf
+      
+        //how to
+        //@{ Html.RenderPartialIf("_Aside", Request.IsAuthenticated); }
+        //@Html.PartialIf("_Aside", Request.IsAuthenticated)
+
+        public static void RenderPartialIf(this HtmlHelper htmlHelper, string partialViewName, bool condition)
+        {
+            if (!condition)
+            {
+                return;
+            }
+            htmlHelper.RenderPartial(partialViewName);
+        }
+        public static void RenderPartialIf(this HtmlHelper htmlHelper, string partialViewName, Func<bool> conditionFunc)
+        {
+            if (conditionFunc == null || !conditionFunc.Invoke())
+            {
+                return;
+            }
+            htmlHelper.RenderPartial(partialViewName);
+        }
+
+        public static IHtmlString PartialIf(this HtmlHelper htmlHelper, string partialViewName, bool condition)
+        {
+            if (!condition)
+            {
+                return MvcHtmlString.Empty;
+            }
+            return htmlHelper.Partial(partialViewName);
+        }
+
+        public static IHtmlString PartialIf(this HtmlHelper htmlHelper, string partialViewName, Func<bool> conditionFunc)
+        {
+            if (conditionFunc == null || !conditionFunc.Invoke())
+            {
+                return MvcHtmlString.Empty;
+            }
+            return htmlHelper.Partial(partialViewName);
+        }
+
+        #endregion
+
+        #region Tags
+
+        //how to
         //@*<link href="~/Content/css/bootstrap.css" rel="stylesheet"/>*@
         //@Html.CssTag("~/Content/css/bootstrap.css")
         //@Url.CssTag("~/Content/css/bootstrap.css")
-
+        
         public static IHtmlString ScriptTag(this HtmlHelper htmlHelper, string url, bool render = true)
         {
             var urlHelper = new UrlHelper(htmlHelper.ViewContext.RequestContext);
@@ -51,6 +97,8 @@ namespace ZQNB.Common.Web.Mvc
             script.Attributes["href"] = urlHelper.Content(ProcessUrl(url));
             return new HtmlString(script.ToString(TagRenderMode.SelfClosing));
         }
+
+        #endregion
 
         public static HelperResult List<T>(this IEnumerable<T> items, Func<T, HelperResult> template)
         {
