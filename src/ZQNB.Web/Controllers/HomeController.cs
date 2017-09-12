@@ -4,9 +4,13 @@ namespace ZQNB.Web.Controllers
 {
     public class HomeController : Controller
     {
-        public ActionResult Index()
+        public ActionResult Index(string view = null)
         {
-            return View();
+            if (string.IsNullOrWhiteSpace(view))
+            {
+                return View();
+            }
+            return View(view);
         }
     }
 }

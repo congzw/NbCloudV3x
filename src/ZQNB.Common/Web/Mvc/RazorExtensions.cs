@@ -115,7 +115,9 @@ namespace ZQNB.Common.Web.Mvc
         /// <returns></returns>
         public static IHtmlString RenderSectionOrPartial<TModel>(this WebViewPage<TModel> page, string name)
         {
-            var renderSection = page.RenderSection(name, false);
+            //Unify/_Breadcrumbs => Unify_Breadcrumbs
+            var fixSectionName = name.Replace("/", "");
+            var renderSection = page.RenderSection(fixSectionName, false);
             if (renderSection != null)
             {
                 return renderSection;
@@ -135,7 +137,8 @@ namespace ZQNB.Common.Web.Mvc
             //{
             //    @Html.Partial("_Xxx")
             //}
-            page.DefineSection(name, () =>
+            var fixSectionName = name.Replace("/", "");
+            page.DefineSection(fixSectionName, () =>
             {
                 page.Html.RenderPartial(name);
             });
@@ -154,7 +157,8 @@ namespace ZQNB.Common.Web.Mvc
             //{
             //
             //}
-            page.DefineSection(name, () =>
+            var fixSectionName = name.Replace("/", "");
+            page.DefineSection(fixSectionName, () =>
             {
 
             });

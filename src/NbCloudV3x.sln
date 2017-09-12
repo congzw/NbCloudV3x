@@ -17,6 +17,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "baselib", "baselib", "{6105
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "web", "web", "{C7ED42BB-5F8F-44FE-8E82-495BEC2EE4FA}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "doc", "doc", "{8BA05772-6C3B-473D-82B0-267737F98D3B}"
+	ProjectSection(SolutionItems) = preProject
+		..\doc\readme-unify.md = ..\doc\readme-unify.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

@@ -1,1 +1,13 @@
-﻿<h2>Home Index</h2>
+﻿@{
+}
+@this.RenderSectionWithPartial("Unify/_Slider")
+@this.HideSection("Unify/_Breadcrumbs")
+
+<h2>Home Index</h2>
+<hr />
+@for (int i = 0; i < 10; i++)
+{
+    <h2>DEMO</h2>
+}
+@Html.Partial("Unify/Plugins/_StyleSwitcher")
+@Html.Partial("Unify/Plugins/_ParallaxSlider")
