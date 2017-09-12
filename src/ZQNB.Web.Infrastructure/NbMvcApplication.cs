@@ -3,6 +3,7 @@ using System.Web.Mvc;
 using System.Web.Routing;
 using ZQNB.Common;
 using ZQNB.Common.Themes.Web.Mvc;
+using ZQNB.Common.Web.Mvc;
 
 namespace ZQNB.Web
 {
@@ -10,7 +11,16 @@ namespace ZQNB.Web
     {
         protected void Application_Start(object sender, EventArgs e)
         {
+            ////filters
+            //FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
+            //GlobalConfiguration.Configure(WebApiConfig.RegisterGlobalFilters);
+
+            //routes for mvc
             RouteConfig.RegisterRoutes(RouteTable.Routes);
+            //Area级别的注册(webapi and mvc)
+            NbAreaRegistration.RegisterAllAreasInvoke();
+            ////routes for webapi
+            //GlobalConfiguration.Configure(WebApiConfig.Register);
 
             //remove all view engines
             //except the themeable razor view engine we use

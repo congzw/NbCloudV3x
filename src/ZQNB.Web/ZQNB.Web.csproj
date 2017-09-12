@@ -85,6 +85,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Code\FluentMapTemplate.cs" />
+    <Compile Include="Areas\Demos\Controllers\HomeController.cs" />
+    <Compile Include="Areas\Demos\DemosAreaRegistration.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -108,6 +110,9 @@
     <Content Include="Themes\Theme01\Views\web.config" />
     <Content Include="Views\Shared\_ThemeDesc.cshtml" />
     <Content Include="Themes\Theme01\Views\Home\_Footer.cshtml" />
+    <Content Include="Areas\Demos\Views\web.config" />
+    <Content Include="Areas\Demos\Views\Home\Index.cshtml" />
+    <Content Include="Areas\Demos\Views\_ViewStart.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -118,6 +123,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Areas\Demos\Models\" />
+    <Folder Include="Areas\Demos\Views\Shared\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ZQNB.Common\ZQNB.Common.csproj">

@@ -1,5 +1,6 @@
 ﻿using System.Web.Mvc;
 using System.Web.Routing;
+using ZQNB.Common;
 
 namespace ZQNB.Web
 {
@@ -7,13 +8,22 @@ namespace ZQNB.Web
     {
         public static void RegisterRoutes(RouteCollection routes)
         {
+            var defaultProjectPrefix = NbRegistry.Instance.CurrentProjectPrefix;
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(
-                name: "Default",
-                url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
-            ).RouteHandler = new DashRouteHandler();
+                "",
+                "",
+                new { controller = "Home", action = "Index"},
+                new[] { string.Format("{0}.Web.Controllers", defaultProjectPrefix) }
+            );
+
+            routes.MapRoute(
+                "Common_Default",
+                "Common/{controller}/{action}",
+                defaults: new {controller = "Home", action = "Index"},
+                namespaces: new[] {string.Format("{0}.Web.Controllers", defaultProjectPrefix)}
+                ); //.RouteHandler = new DashRouteHandler();
         }
     }
 }
