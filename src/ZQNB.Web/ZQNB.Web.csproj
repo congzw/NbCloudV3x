@@ -437,8 +437,6 @@
     <Content Include="Views\Shared\_Footer.cshtml" />
     <Content Include="Themes\Theme02\Views\Shared\_Footer.cshtml" />
     <Content Include="Themes\Theme02\Views\Shared\_Layout.cshtml" />
-    <Content Include="Themes\Theme02\Views\_ViewStart.cshtml" />
-    <Content Include="Themes\Theme01\Views\_ViewStart.cshtml" />
     <Content Include="Themes\Theme02\Views\web.config" />
     <Content Include="Themes\Theme01\Views\web.config" />
     <Content Include="Views\Shared\_ThemeDesc.cshtml" />
@@ -524,6 +522,12 @@
     <Content Include="Views\Shared\Unify\_HeaderNav.cshtml" />
     <Content Include="Views\Shared\Unify\_HeaderTop.cshtml" />
     <Content Include="Views\Home\Demo.cshtml" />
+    <Content Include="Themes\Theme03\Views\Shared\Unify\_Layout.cshtml" />
+    <Content Include="Themes\Theme03\Views\web.config" />
+    <Content Include="Views\Home\_Layout.cshtml" />
+    <Content Include="Themes\Theme03\Views\Home\_Layout.cshtml" />
+    <Content Include="Themes\Theme01\Views\_ViewStart.cshtml" />
+    <Content Include="Themes\Theme02\Views\_ViewStart.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

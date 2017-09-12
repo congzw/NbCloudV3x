@@ -50,7 +50,7 @@ namespace ZQNB.Common
             }
         }
 
-        private static readonly string Config_Common_LogPrefix = "Config_Common_LogPrefix";
+        private static readonly string Config_Common_LogPrefix = "Config.Common.LogPrefix";
         private static Action<string> _defaultLogAction = new Action<string>(TraceMessage);
         private static string _prefix = null;
         private static void TraceMessage(string message)
