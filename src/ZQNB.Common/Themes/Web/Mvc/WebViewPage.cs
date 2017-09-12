@@ -93,6 +93,8 @@ namespace ZQNB.Common.Themes.Web.Mvc
             //~/Views/Shared/Unify/_Layout.cshtml => _Layout【KO】 => Unify/_Layout 
             //~/Views/Shared/Unify/A/B/_Layout.cshtml => _Layout【KO】 => Unify/A/B/_Layout 
             //~/Themes/Theme02/Views/Shared/_Layout.cshtml => Views/Shared/_Layout 【KO】
+            //~/Themes/Theme01/Areas/Demos/Views/Home/Index.cshtml: ~/Views/Shared/_Layout.cshtml => ~/Views/Home/_Layout.cshtml 
+
 
             if (string.IsNullOrWhiteSpace(layout))
             {

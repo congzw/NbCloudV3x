@@ -528,6 +528,9 @@
     <Content Include="Themes\Theme03\Views\Home\_Layout.cshtml" />
     <Content Include="Themes\Theme01\Views\_ViewStart.cshtml" />
     <Content Include="Themes\Theme02\Views\_ViewStart.cshtml" />
+    <Content Include="Themes\Theme01\Areas\Demos\Views\Home\Index.cshtml" />
+    <Content Include="Themes\Theme01\Areas\Demos\Views\web.config" />
+    <Content Include="Themes\Theme01\Areas\Demos\Views\_ViewStart.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
