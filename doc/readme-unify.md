@@ -31,3 +31,31 @@ Page:
     - _PageScripts_JsApp
     - _PageScripts_JsPage
     - _PageScripts_JsGlobalFix
+
+
+## ThemeMvc
+
+- TestCase:
+    - ~/Home/Index
+    - ~/Demos/Home/Index
+
+
+Themes:
+
+- Default:
+    - ~/Views/Home/Index.cshtml
+    - ~/Areas/Demos/Views/Home/Index.cshtml
+
+- Theme01:
+    - ~/Themes/Theme01/Views/Home/Index.cshtml
+    - ~/Themes/Theme01/Areas/Demos/Views/Home/Index.cshtml
+
+- Theme02:
+    - ~/Themes/Theme02/Views/Home/Index.cshtml
+    - ~/Areas/Demos/Views/Home/Index.cshtml
+
+- Theme03:
+    - ~/Themes/Theme03/Views/Shared/Unify/_Layout.cshtml
+    - ~/Views/Home/Index.cshtml
+    - ~/Views/Shared/_Footer.cshtml
+    - ~/Views/Shared/_ThemeDesc.cshtml

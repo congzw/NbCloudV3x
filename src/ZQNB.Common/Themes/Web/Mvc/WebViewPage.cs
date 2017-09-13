@@ -12,8 +12,8 @@ namespace ZQNB.Common.Themes.Web.Mvc
             var isDebugMode = MyDebugHelper.IsDebugMode(true);
             if (isDebugMode)
             {
-                ////just for debug
-                //this.WriteLiteral("\r\n<div style='color:red'>" + this.VirtualPath + "</div>");
+                //just for debug
+                this.WriteLiteral("\r\n<div style='color:red'>" + this.VirtualPath + "</div>");
                 this.WriteLiteral("<!--Begin-ViewPath: " + this.VirtualPath + "-->\r\n");
             }
             base.ExecutePageHierarchy();
@@ -95,6 +95,8 @@ namespace ZQNB.Common.Themes.Web.Mvc
             //~/Themes/Theme02/Views/Shared/_Layout.cshtml => Views/Shared/_Layout 【KO】
             //~/Themes/Theme01/Areas/Demos/Views/Home/Index.cshtml: ~/Views/Shared/_Layout.cshtml => ~/Views/Home/_Layout.cshtml 
 
+            //Layout = "~/Areas/Demos/Views/Shared/_Layout.cshtml";
+            //Layout = "~/Areas/Demos/Views/Home/_Layout.cshtml";
 
             if (string.IsNullOrWhiteSpace(layout))
             {
@@ -109,13 +111,13 @@ namespace ZQNB.Common.Themes.Web.Mvc
 
             var filename = System.IO.Path.GetFileNameWithoutExtension(layout);
             var splits = layout.Split('/');
-            if (splits.Length <= 3)
+            if (splits.Length < 5)
             {
                 return filename;
             }
 
             //[Unify, _Layout.cshtml] => [Unify] 
-            var middles = splits.Skip(3).Take(splits.Length - 4).ToList();
+            var middles = splits.Skip(3).Take(splits.Length - 3 - 1).ToList();
             var result = middles.Aggregate(string.Empty, (current, split) => current + split + "/");
             result += filename;
             LogMessage(string.Format("GuessLayout: {0} => {1}", layout, result));

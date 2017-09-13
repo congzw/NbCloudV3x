@@ -531,18 +531,18 @@
     <Content Include="Themes\Theme01\Areas\Demos\Views\Home\Index.cshtml" />
     <Content Include="Themes\Theme01\Areas\Demos\Views\web.config" />
     <Content Include="Themes\Theme01\Areas\Demos\Views\_ViewStart.cshtml" />
+    <Content Include="Areas\Demos\Views\Home\_Layout.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
-    <Content Include="_Layout.cshtml" />
+    <Content Include="Areas\Demos\Views\Shared\_Layout.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Demos\Models\" />
-    <Folder Include="Areas\Demos\Views\Shared\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ZQNB.Common\ZQNB.Common.csproj">
