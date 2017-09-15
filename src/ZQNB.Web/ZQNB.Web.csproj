@@ -421,6 +421,7 @@
     <Compile Include="Areas\Demos\Controllers\HomeController.cs" />
     <Compile Include="Areas\Demos\DemosAreaRegistration.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\TemplateController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -532,6 +533,11 @@
     <Content Include="Themes\Theme01\Areas\Demos\Views\web.config" />
     <Content Include="Themes\Theme01\Areas\Demos\Views\_ViewStart.cshtml" />
     <Content Include="Areas\Demos\Views\Home\_Layout.cshtml" />
+    <Content Include="Views\Template\Index.cshtml" />
+    <Content Include="Views\Template\_UnifyLayout.cshtml" />
+    <Content Include="Views\Template\_UnifyHeaderTop.cshtml" />
+    <Content Include="Views\Template\_UnifyHeaderNav.cshtml" />
+    <Content Include="Views\Template\_ViewStart.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -543,6 +549,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Demos\Models\" />
+    <Folder Include="Content\scripts\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ZQNB.Common\ZQNB.Common.csproj">
