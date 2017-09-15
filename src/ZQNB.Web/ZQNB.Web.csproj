@@ -539,7 +539,6 @@
     <Content Include="Views\Template\_UnifyHeaderTop.cshtml" />
     <Content Include="Views\Template\_UnifyHeaderNav.cshtml" />
     <Content Include="Views\Template\_ViewStart.cshtml" />
-    <Content Include="Views\Template\_UnifyFooter.cshtml" />
     <Content Include="Views\Template\_CopyRight.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
