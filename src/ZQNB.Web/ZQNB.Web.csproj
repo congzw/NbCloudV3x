@@ -413,6 +413,7 @@
     <Content Include="Content\Unify\assets\plugins\placeholder-IE-fixes.js" />
     <Content Include="Content\Unify\assets\plugins\respond.js" />
     <Content Include="Content\Unify\assets\plugins\smoothScroll.js" />
+    <Content Include="error.html" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />

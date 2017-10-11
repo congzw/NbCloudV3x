@@ -1,4 +1,5 @@
-﻿using System.Web.Mvc;
+﻿using System;
+using System.Web.Mvc;
 
 namespace ZQNB.Web.Controllers
 {
@@ -11,6 +12,11 @@ namespace ZQNB.Web.Controllers
                 return View();
             }
             return View(view);
+        }
+
+        public ActionResult Error()
+        {
+            throw new ApplicationException("some error");
         }
     }
 }
