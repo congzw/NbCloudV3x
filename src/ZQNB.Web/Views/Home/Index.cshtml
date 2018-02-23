@@ -1,7 +1,14 @@
 ﻿@{
     //this.Layout = "~/Views/Home/_Layout.cshtml";
+    var assets = UnifyHelper.GetAssetPath();
 }
 <h2>Common Home Index</h2>
+
+@section styles
+{
+    <link rel="stylesheet" href="@assets/css/plugins/style-switcher.css">
+}
+@Html.Partial("Unify/Plugins/_StyleSwitcher")
 @*@this.RenderSectionWithPartial("Unify/_Slider")
 @this.HideSection("Unify/_Breadcrumbs")
 
