@@ -116,7 +116,6 @@ VideoMeetings 第三方视频会议
 像是量表打分，调查问卷这类模块，如何划分合理？有UI，有持久化，有业务
 
 
-
 ## 模块梳理（V3.4）
 
 Accounts 账号
@@ -132,4 +131,43 @@ Permissions 权限
 
 
 
+
+| 模块代码                 	| 模块名称           	| 重构建议 	|
+|--------------------------	|--------------------	|----------	|
+| Accounts                 	| 账号               	|          	|
+| Activity                 	| 大赛               	|          	|
+| AnalyticalEngine         	| 分析引擎           	|          	|
+| Catalogs                 	| 资源目录           	|          	|
+| ClassEntity              	| 班级               	|          	|
+| Comment                  	| 多级回复评论       	|          	|
+| CommonPlayerModule       	| 播放器组件         	|          	|
+| Dics                     	| 字典               	|          	|
+| Ds                       	| 组织站点           	|          	|
+| DynamicModuleWidget      	| 动态组件           	|          	|
+| Evals                    	| 量表打分           	|          	|
+| Examination              	| 调查问卷           	|          	|
+| FMSTopologyStructure?FMS 	| 拓扑结构           	|          	|
+| Friends                  	| 好友               	|          	|
+| Gateway                  	| 网关服务           	|          	|
+| Groups                   	| 圈子               	|          	|
+| HistoryRecords           	| 历史记录           	|          	|
+| Labels                   	| 标签               	|          	|
+| Loggers                  	| 日志存储           	|          	|
+| Messages                 	| 消息系统           	|          	|
+| Misc                     	| 杂项               	|          	|
+| Mobile                   	| 移动端             	|          	|
+| My                       	| “我”的数据中心     	|          	|
+| News                     	| 公告               	|          	|
+| Packages                 	| 模块的安装卸载     	|          	|
+| Rbac                     	| 基于角色的权限控制     	|          	|
+| RecordScheduling         	| 服务器录像调度服务 	    |          	|
+| Resources                	| 资源               	|          	|
+| Settings                 	| 通用设置           	|          	|
+| SolrNet                  	| 全站检索           	|          	|
+| Sso                      	| 单点登录           	|          	|
+| StreamingMedia           	| 流媒体             	|          	|
+| Timetables               	| 课表               	|          	|
+| Users                    	| 用户信息           	|          	|
+| VideoClip                	| 视频切片           	|          	|
+| VideoMeetings            	| 第三方视频会议     	|          	|
 
