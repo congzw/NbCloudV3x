@@ -12,5 +12,6 @@ namespace ZQNB.BaseLib.Ds.Orgs.Entities
     {
         public virtual string Code { get; set; }
         public virtual string Name { get; set; }
+        public virtual bool Enabled { get; set; }
     }
 }

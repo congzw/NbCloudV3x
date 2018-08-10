@@ -40,6 +40,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Orgs\Entities\Entities.cs" />
+    <Compile Include="Orgs\Services\IOrgService.cs" />
+    <Compile Include="Orgs\Services\IOrgTypeService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -51,7 +53,6 @@
   <ItemGroup>
     <Folder Include="Orgs\AppServices\" />
     <Folder Include="Orgs\Entities\_Map\" />
-    <Folder Include="Orgs\Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
