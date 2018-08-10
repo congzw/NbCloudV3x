@@ -20,6 +20,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "doc", "doc", "{8BA05772-6C3B-473D-82B0-267737F98D3B}"
 	ProjectSection(SolutionItems) = preProject
 		..\doc\readme-unify.md = ..\doc\readme-unify.md
+		..\doc\todolist.md = ..\doc\todolist.md
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZQNB.BaseLib.Packages", "ZQNB.BaseLib.Packages\ZQNB.BaseLib.Packages.csproj", "{EDEC68A4-DF24-4BA4-81AD-C4E086779907}"

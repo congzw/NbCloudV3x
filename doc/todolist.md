@@ -1,11 +1,6 @@
 # TODOLIST
 
-## How To Use
-
-	- [] for an empty checkbox
-	- [x] for a checked checkbox
-
-## setup dev structure
+## init projects
 
 - [x] create empty sln folder(with .gitattributes and .gitignore files)
 - [x] Git Bash Here: [git init]		
@@ -14,4 +9,9 @@
 - [x] add test projects and ref
 - [x] commit!
 
-## Jobs
+## features
+
+- [] setup site
+- [] multi sites
+- [] multi themes
+- [] multi tenancy
