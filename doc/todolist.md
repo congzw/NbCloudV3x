@@ -14,4 +14,4 @@
 - [] setup site
 - [] multi sites
 - [] multi themes
-- [] multi tenancy
+- [] multi tenants
