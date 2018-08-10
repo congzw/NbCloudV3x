@@ -80,6 +80,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\scripts\zqnb.js" />
+    <Content Include="Content\scripts\zqnb.mainApp.js" />
     <Content Include="Content\Unify\assets\css\app.css" />
     <Content Include="Content\Unify\assets\css\blocks.css" />
     <Content Include="Content\Unify\assets\css\css-rtl\app-rtl.css" />
@@ -552,7 +554,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Demos\Models\" />
-    <Folder Include="Content\scripts\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ZQNB.Common\ZQNB.Common.csproj">
