@@ -291,7 +291,7 @@ namespace ZQNB.Common.Themes.Web.Mvc
                 return GetConfigTheme();
             }
 
-            var requestTheme = themeManager.GetRequestTheme(controllerContext.RequestContext);
+            var requestTheme = themeManager.GetRequestTheme();
             return requestTheme.ThemeName;
         }
 

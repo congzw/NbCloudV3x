@@ -20,12 +20,12 @@ namespace ZQNB.Common.Themes
             _perRequestCacheManager = perRequestCacheManager;
         }
 
-        public ThemeContext GetRequestTheme(RequestContext requestContext)
+        public ThemeContext GetRequestTheme()
         {
             if (!_perRequestCacheManager.IsSet(ThemeCacheKey))
             {
                 var orderedThemeSelectors = _themeSelectors
-                    .Select(x => x.GetTheme(requestContext))
+                    .Select(x => x.GetTheme())
                     .Where(x => x != null)
                     .OrderByDescending(x => x.Priority);
 

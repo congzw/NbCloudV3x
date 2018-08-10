@@ -23,11 +23,17 @@ namespace ZQNB.Common.Themes
     /// </summary>
     public interface IThemeSelector
     {
+        ///// <summary>
+        ///// 获取主题
+        ///// </summary>
+        ///// <param name="requestContext"></param>
+        ///// <returns></returns>
+        //ThemeSelectorResult GetTheme(RequestContext requestContext);
+
         /// <summary>
         /// 获取主题
         /// </summary>
-        /// <param name="requestContext"></param>
         /// <returns></returns>
-        ThemeSelectorResult GetTheme(RequestContext requestContext);
+        ThemeSelectorResult GetTheme();
     }
 }

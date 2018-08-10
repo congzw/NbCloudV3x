@@ -4,12 +4,18 @@ namespace ZQNB.Common.Themes
 {
     public interface IThemeManager
     {
+        ///// <summary>
+        ///// 获取当前主题
+        ///// </summary>
+        ///// <param name="requestContext"></param>
+        ///// <returns></returns>
+        //ThemeContext GetRequestTheme(RequestContext requestContext);
+
         /// <summary>
         /// 获取当前主题
         /// </summary>
-        /// <param name="requestContext"></param>
         /// <returns></returns>
-        ThemeContext GetRequestTheme(RequestContext requestContext);
+        ThemeContext GetRequestTheme();
     }
 
     public class ThemeContext

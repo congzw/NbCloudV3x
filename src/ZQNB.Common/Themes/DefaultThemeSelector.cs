@@ -1,4 +1,5 @@
-﻿using System.Web.Routing;
+﻿using System.Web;
+using System.Web.Routing;
 
 namespace ZQNB.Common.Themes
 {
@@ -67,5 +68,10 @@ namespace ZQNB.Common.Themes
             return _themeNameInConfig ?? (_themeNameInConfig = MyConfigHelper.GetAppSettingValue(DefaultThemeParamNameOrConfigKey, string.Empty));
         }
         #endregion
+
+        public ThemeSelectorResult GetTheme()
+        {
+            return GetTheme(HttpContext.Current.Request.RequestContext);
+        }
     }
 }
