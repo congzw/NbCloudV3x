@@ -43,6 +43,9 @@
     <Compile Include="Orgs\Services\IOrgService.cs" />
     <Compile Include="Orgs\Services\IOrgTypeService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sites\Entities\GlobalCatalog.cs" />
+    <Compile Include="Sites\Entities\Site.cs" />
+    <Compile Include="Sites\Entities\SiteGroup.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ZQNB.Common\ZQNB.Common.csproj">
@@ -53,6 +56,7 @@
   <ItemGroup>
     <Folder Include="Orgs\AppServices\" />
     <Folder Include="Orgs\Entities\_Map\" />
+    <Folder Include="Sites\Entities\_Map\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
