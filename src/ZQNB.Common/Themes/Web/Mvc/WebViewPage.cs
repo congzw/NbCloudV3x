@@ -9,15 +9,17 @@ namespace ZQNB.Common.Themes.Web.Mvc
     {
         public override void ExecutePageHierarchy()
         {
-            var isDebugMode = MyDebugHelper.IsDebugMode(true);
-            if (isDebugMode)
+            var showVirtualPath = WebViewPageHelper.ShowVirtualPath();
+            if (showVirtualPath)
             {
                 //just for debug
                 this.WriteLiteral("\r\n<div style='color:red'>" + this.VirtualPath + "</div>");
                 this.WriteLiteral("<!--Begin-ViewPath: " + this.VirtualPath + "-->\r\n");
             }
+
             base.ExecutePageHierarchy();
-            if (isDebugMode)
+            
+            if (showVirtualPath)
             {
                 this.WriteLiteral("\r\n<!--End-ViewPath: " + this.VirtualPath + "-->");
             }
@@ -34,8 +36,7 @@ namespace ZQNB.Common.Themes.Web.Mvc
                 base.Layout = value;
             }
         }
-
-
+        
         private string _themeLayout = null;
         private string ProcessThemeLayout(string layout)
         {
@@ -66,7 +67,7 @@ namespace ZQNB.Common.Themes.Web.Mvc
             UtilsLogger.LogMessage(message);
         }
     }
-
+    
     public abstract class WebViewPage : WebViewPage<dynamic>
     {
     }
@@ -126,6 +127,21 @@ namespace ZQNB.Common.Themes.Web.Mvc
         private static void LogMessage(string message)
         {
             UtilsLogger.LogMessage(message);
+        }
+    }
+
+    internal static class WebViewPageHelper
+    {
+        private static string Config_Common_ShowVirtualPath = "Config.Common.ShowVirtualPath";
+        private static bool? _showVirtualPath = null;
+
+        public static bool ShowVirtualPath()
+        {
+            if (_showVirtualPath == null)
+            {
+                _showVirtualPath = MyConfigHelper.GetAppSettingValueAsBool(Config_Common_ShowVirtualPath, false);
+            }
+            return _showVirtualPath.Value;
         }
     }
 }
