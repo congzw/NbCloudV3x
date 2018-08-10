@@ -95,6 +95,7 @@
     <Compile Include="Caching\IPerApplicationCacheManager.cs" />
     <Compile Include="Caching\NullCacheManager.cs" />
     <Compile Include="Caching\PerRequestCacheManager.cs" />
+    <Compile Include="Data\Model\NbEntity.cs" />
     <Compile Include="Extensions\StringExtensions.cs" />
     <Compile Include="GuidHelper.cs" />
     <Compile Include="Ioc\ActivationException.cs" />
