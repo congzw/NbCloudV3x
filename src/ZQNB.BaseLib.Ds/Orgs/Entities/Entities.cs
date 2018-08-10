@@ -1,6 +1,6 @@
 ﻿using ZQNB.Common.Data.Model;
 
-namespace ZQNB.BaseLib.Ds.Orgs
+namespace ZQNB.BaseLib.Ds.Orgs.Entities
 {
     public class Org : NbEntity<Org>
     {

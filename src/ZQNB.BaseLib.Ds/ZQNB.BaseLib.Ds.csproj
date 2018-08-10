@@ -39,7 +39,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Orgs\Org.cs" />
+    <Compile Include="Orgs\Entities\Entities.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -47,6 +47,11 @@
       <Project>{698dbdf8-d962-4b1d-82be-b6c6f98a29de}</Project>
       <Name>ZQNB.Common</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Orgs\AppServices\" />
+    <Folder Include="Orgs\Entities\_Map\" />
+    <Folder Include="Orgs\Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
